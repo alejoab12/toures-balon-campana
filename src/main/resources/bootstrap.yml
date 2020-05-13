@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: toures-balon-campana
+  profiles: prod
+  cloud:
+    config:
+      uri: http://172.17.0.5:8888

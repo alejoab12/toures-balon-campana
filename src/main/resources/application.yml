@@ -1,0 +1,29 @@
+server:
+  port: 0
+---
+spring:
+  minio:
+    url: http://192.168.0.6:9000
+    bucket: toures-balon
+    access-key: minioadmin
+    secret-key: minioadmin
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 5MB
+      max-request-size: 10MB
+  profiles:
+    active: dev
+  eureka:
+    client:
+      #  service-url: {"http://toures-balon-discovery:8761/eureka"}
+      serviceUrl:
+        defaultZone: "http://172.17.0.6:8761/eureka"
+    instance:
+      prefer-ip-address: true
+  sleuth:
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://172.17.0.8:9411/
