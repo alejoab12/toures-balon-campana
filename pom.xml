@@ -17,6 +17,7 @@
     <properties>
         <java.version>11</java.version>
         <azure.version>2.2.4</azure.version>
+        <spring-cloud.version>Hoxton.SR4</spring-cloud.version>
     </properties>
     <dependencies>
 
