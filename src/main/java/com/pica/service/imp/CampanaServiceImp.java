@@ -46,7 +46,7 @@ public class CampanaServiceImp implements CampanaService {
         InputStream inputStream = minioService.get(path);
         InputStreamResource inputStreamResource = new InputStreamResource(inputStream);
 
-        response.addHeader("Content-disposition", "attachment;filename=" + object.concat(".jpg"));
+        response.addHeader("Content-disposition", "attachment;filename=" + object);
         response.setContentType(URLConnection.guessContentTypeFromName(object));
 
         IOUtils.copy(inputStream, response.getOutputStream());
