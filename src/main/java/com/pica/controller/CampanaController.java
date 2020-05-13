@@ -13,7 +13,7 @@ import java.util.List;
 
 
 @RestController
-@RequestMapping("/files")
+@RequestMapping("/campana")
 @CrossOrigin(value = "*", methods = {RequestMethod.POST, RequestMethod.POST})
 public class CampanaController {
 
