@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: toures-balon-usuario-categoria-service
+  name: toures-balon-campana-service
 spec:
   selector:
-    app: toures-balon-usuario-categoria
+    app: toures-balon-campana
   ports:
     - protocol: TCP
       port: 8080
